@@ -1,6 +1,13 @@
 # SPIFu
 Official Implementation of SPIFu (NeurIPS 2022 )
 
+## Update:
+### a) To download the pretrained model: 
+    SPIFu trained on Groundtruth SMPL-X (Will follow the SMPL-X pose more closely): https://drive.google.com/file/d/1f6ZTysLvlq23II-pYwwo0lVDbAOHjlq-/view?usp=share_link
+    SPIFu trained on Predicted SMPL-X (More robust to errors in SMPL-X pose errors): https://drive.google.com/file/d/1gWWMIkrwYQwJaN9KnHBTL2-WTtqmu8wt/view?usp=share_link
+    Frontal Normal Map generator: https://drive.google.com/file/d/10_6w4DKODuzYxC88UgwPp5jHb6SPg7_5/view?usp=share_link
+    Rear Normal Map generator: https://drive.google.com/file/d/10FD3qNyGw6fajoBEsHMOLeehM_F63z4T/view?usp=share_link
+
 ## Prerequisites:
 ### 1) Request permission to use THuman2.0 dataset (https://github.com/ytrock/THuman2.0-Dataset). 
 After permission granted, download the dataset (THuman2.0_Release). Put the "THuman2.0_Release" folder inside the "rendering_script" folder. 
