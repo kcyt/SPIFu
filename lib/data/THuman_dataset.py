@@ -184,14 +184,14 @@ class THumanDataset(Dataset):
 
                 self.coordinate_matrix = np.repeat(XY[:,:,None,:], repeats=NUM_OF_FACES , axis=2 )  # Shape of [self.opt.output_resolution_smpl_map, self.opt.output_resolution_smpl_map, NUM_OF_FACES , 2]
 
-                self.blend_weights = np.load("/mnt/lustre/kennard.chan/smpl_unrolling/PCA_smplx_blend_weights.npy") # Shape of [10475, 24]
+                self.blend_weights = np.load("SPIFu/RayBasedSampling/PCA_smplx_blend_weights.npy") # Shape of [10475, 24]
 
-                self.front_or_back_facing_at_rest = np.load("/mnt/lustre/kennard.chan/smpl_unrolling/smplx_front_or_back_facing_at_rest.npy") # [6890, 1] 
+                self.front_or_back_facing_at_rest = np.load("SPIFu/RayBasedSampling/smplx_front_or_back_facing_at_rest.npy") # [6890, 1] 
                 self.front_or_back_facing_at_rest[self.front_or_back_facing_at_rest<1] = -1 # convert the zeros in front_or_back_facing_at_rest into -1
 
 
                 if self.opt.use_normals_smpl and self.opt.use_normals_smpl_with_rest_pose_normals:
-                    self.normals_at_rest = np.load('/mnt/lustre/kennard.chan/smpl_unrolling/rest_pose_smplx_vertex_normals.npy') # [6890, 3]
+                    self.normals_at_rest = np.load('SPIFu/RayBasedSampling/rest_pose_smplx_vertex_normals.npy') # [6890, 3]
 
 
 
